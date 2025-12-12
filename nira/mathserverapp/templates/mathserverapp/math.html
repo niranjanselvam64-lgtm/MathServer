@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            efficiency
+        </title>
+        <style>
+            body
+            {
+               background-color: rgb(210, 210, 27);
+            }
+            .box
+            {
+               width: 600px;
+               height: 300px;
+               background-color: red;
+               border:dotted 3px black;
+               padding: 10px;
+               margin-left: 275px;
+               margin-top: 200px;
+               position:fixed;
+               top: 100px;
+               left: 275px; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h2 align="center"> EFFICIENCY OF A VEHICLE</h2>
+            <h3 align="center">Niranjan S (25004141) </h3>
+            <h2 align="center">MILEAGE CALCULATION</h2>
+            <form method="post" align="center">
+                {% csrf_token %}
+                <label>Distance:</label>
+                <input type="text" name="distance" value="{{ distance }}">
+                <br>
+                <br>
+                <label>Fuel Consumed:</label>
+                <input type="text" name="efficiency" value="{{ efficiency}}">
+                <br>
+                <br>
+                <input type="submit" value="calculate">
+                <br>
+                <label>Mileage:</label>
+                <input type="text" name="mileage" value="{{ mileage }}">
+            </form>
+        </div>
+    </body>
+</html>
