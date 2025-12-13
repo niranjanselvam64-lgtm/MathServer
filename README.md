@@ -102,10 +102,10 @@ urlpatterns = [path('',views.mileage,name='vehicle')]
 ```
 
 ## OUTPUT - SERVER SIDE:
-![alt text](<Screenshot (38).png>)
+![alt text](<Screenshot (41).png>)
 
 ## OUTPUT - WEBPAGE:
-![alt text](<Screenshot (37).png>)
+![alt text](<Screenshot (40)-1.png>)
 
 ## RESULT:
 The a web page to calculate vehicle mileage and fuel efficiency using server-side scripts is created successfully.
